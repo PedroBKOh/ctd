@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
+
+.titulo-principal {
+
+    color: #4111ec;
+    font-family: 'Roboto', Arial, sans-serif;
+
+}
+
+div {
+
+    /*background-color: grey;*/
+    background-image: url('pq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    height: 400px;
+
+}
+
