@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções, operadores matemáticos e lógicos</title>
+</head>
+<body>
+    <!--Importação do arquivo javascript-->
+    <script scr="script.js"></script>
+    
+    <script>
+
+    function saudar() {
+        // 1. Guarda o nome do usuário.
+        var nomeDoUsuario = prompt('Qual o seu nome?');
+        // 2. Guarda a quantidade de dolares que o usuário deseja cotar.
+        var quantidadeDolares = prompt('Quantos dólares ele gostaria de cotar?');
+        // 3. Valor do dolar hoje
+        var cotacaoDolarHoje = 5.3;
+        // 4. Apresenta o resultado.
+        // var saudar = alert('Olá' + ' ' + nomeDoUsuario + 'US$' + ' ' + quantidadeDolares + ' ' + 'valem' + ' ' + 'R$' + ' ' + quantidadeDolares *cotacaoDolarHoje + ' ' + 'hoje.');
+        // Código melhorado...
+        var saudar = alert(`Olá ${nomeDoUsuario}. US$ ${quantidadeDolares} valem R$ ${quantidadeDolares * cotacaoDolarHoje} hoje.`);
+    }
+    
+    // Método
+    saudar();
+
+     </script>
+
+</body>
+</html>
+

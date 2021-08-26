@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULO DE IMC</title>
+</head>
+    
+<body>
+        <center><h1> Cálculo de IMC </h1></center>
+
+        <br>
+        <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde 
+            para calcular o peso ideal de cada pessoa.</p>
+        <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada 
+            ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 
+            24,9.</p>           
+        <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices 
+            da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+        <br>
+        <br>
+        <br>
+
+
+        
+                    
+        <center><button onclick="calcularIMC()">Calcular seu IMC</button></center>
+
+            <script>
+            function calcularIMC() {
+                var nomeUser = prompt('Qual é o seu primeiro nome?');
+                var idadeUser = prompt('Qual a sua idade?');
+                var alturaUser = prompt('Qual a sua altura? (digite em metros com ponto)');
+                var pesoUser = prompt('Qual é o seu peso? (kilograma)');
+                var iMC = Math.round(pesoUser / (alturaUser * alturaUser));
+            
+                function calculaIMC(){
+                    alert(`Seu IMC é ${iMC}`);
+                } 
+                calculaIMC();
+
+                function classification(){
+                    if(iMC < 18.5){alert(`Sua seu IMC é de MAGREZA com grau de Obesidade 0`);}
+                    else if(iMC >= 18.5 && iMC <= 24.9){alert(`Sua seu IMC é de NORMAL com grau de Obesidade 1/2`);}
+                    else if(iMC >= 25 && iMC <= 29.9){alert(`Sua seu IMC é de SOBREPESO com grau de Obesidade I`);}
+                    else if(iMC >= 30 && iMC <= 39.9){alert(`Sua seu IMC é de OBESIDADE com grau de Obesidade II`);}
+                    else if(iMC >= 40){alert(`Sua seu IMC é de OBESIDADE GRAVE com grau de Obesidade III`);}
+                    else {alert(`Não foi possível calcular o seu IMC!!!\n\n\n  TENTE NOVAMENTE!`);}                   
+                }
+                classification()
+            }
+            </script>
+</body>
+
+</html>
