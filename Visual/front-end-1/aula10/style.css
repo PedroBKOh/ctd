@@ -1,0 +1,42 @@
+    .banner {
+
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7878e043-1ba3-42a4-a776-a6f1255f7aa9/d8goo8s-58e65778-c943-4378-995b-f5e5e0dea12e.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc4NzhlMDQzLTFiYTMtNDJhNC1hNzc2LWE2ZjEyNTVmN2FhOVwvZDhnb284cy01OGU2NTc3OC1jOTQzLTQzNzgtOTk1Yi1mNWU1ZTBkZWExMmUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MlACz0H3XSXEc9DNBdmmG7FRVLhZkvzomOr-Pgu3lII");
+    
+    width: 1280px;
+    height: 720px;
+    padding: 0px;
+    margin: 0px;
+    
+    }
+  
+    .titulo {
+    
+        color: #000000;
+        padding-left: 64px;
+        margin-bottom: 6px;
+        text-align: center;
+    
+    }
+    
+    .stitulo {
+    
+        color: #00000099;
+        padding-left: 64px;
+        text-align: center;
+    
+    }     
+
+    .botao {
+        
+        width: 112px;
+        height: 24px;
+        background-color: #000000;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        
+    }
