@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULO DE IMC</title>
+</head>
+    
+<body>
+        <center><h1> Cálculo de IMC </h1></center>
+
+        <br>
+        <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde 
+            para calcular o peso ideal de cada pessoa.</p>
+        <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada 
+            ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 
+            24,9.</p>           
+        <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices 
+            da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+        <br>
+        <br>
+        <br>
+
+                         
+        <center><button onclick="calcularImc()">Calcular seu IMC</button></center>
+
+            <script>
+            function calcularImc(){
+                var paciente = prompt('Qual é o seu primeiro nome?');
+                var idade = prompt('Qual a sua idade?');
+                var altura = prompt('Qual a sua altura? (digite em metros com ponto)');
+                var peso = prompt('Qual é o seu peso? (kilograma)');
+                var iMC = Math.round(peso / (altura * altura));
+            
+                function calcularImc(){
+                    alert(`Seu IMC é ${iMC}`);
+                } 
+                calcularImc();
+
+                function classific(){
+                    if(iMC < 18.5){alert(`Sua seu IMC é de MAGREZA com grau de Obesidade 0`);}
+                    else if(iMC >= 18.5 && iMC <= 24.9){alert(`Sua seu IMC é de NORMAL com grau de Obesidade 1/2`);}
+                    else if(iMC >= 25 && iMC <= 29.9){alert(`Sua seu IMC é de SOBREPESO com grau de Obesidade I`);}
+                    else if(iMC >= 30 && iMC <= 39.9){alert(`Sua seu IMC é de OBESIDADE com grau de Obesidade II`);}
+                    else if(iMC >= 40){alert(`Sua seu IMC é de OBESIDADE GRAVE com grau de Obesidade III`);}
+                    else {alert(`Não foi possível calcular o seu IMC!!!\n\n\n  TENTE NOVAMENTE!`);}                   
+                }
+                classific()
+            
+
+                function sobrepeso(){
+                    var consulta = window.confirm("Você deseja agendar uma consulta com um nutricionista?");
+                }
+          
+                if (consulta){
+                    var paciente = {
+                    nome: prompt("Qual é seu nome?"),
+                    data: prompt("Qual dia deseja agendar?"),
+                    hora: prompt("Qual o horário deseja atendido?")   
+                    }
+                }
+                
+                else {
+                    alert("Agradecemos seu contato.");
+                    var confirma = window.confirm(`Agradecemos seu contato, \n ${paciente.nome}. 
+                    Sua consulta com a Dra. Luana Nagydai e será no dia ${paciente.data} no horário escolhido: 
+                    ${paciente.hora}. \n ${paciente.nome}, você confirma ${paciente.data} (dia) e 
+                    ${paciente.hora} (horário) escolhidos?`);
+                }
+           
+                if (confirma == false){
+                    sobrepeso();
+                } 
+                
+                else {
+                    alert("Obrigado por utilizar nossos serviços");
+                }
+
+            }
+        
+        
+        /*function calcularImc() {
+            var peso = prompt('Qual seu peso?');
+            var altura = prompt('Qual sua Altura?');
+            var resultadoImc = peso / (altura * altura);
+            var perfilImc = 0;
+           
+            if (resultadoImc < 18.5) {
+                   perfilImc = 'MAGREZA';
+            } 
+            
+            else if (resultadoImc <= 24.9) {
+                    perfilImc = 'NORMAL';
+            } 
+            
+            else if (resultadoImc <= 29.9) {
+                    perfilImc = 'SOBREPESO';
+            } 
+            
+            else if (resultadoImc <= 39.9) {
+                    perfilImc = 'OBESIDADE';
+            }
+                
+            else {
+                    perfilImc ='OBESIDADE GRAVE';
+            }
+            
+            window.confirm(`Seu IMC é iqual a: ${Math.round(resultadoImc * 10 / 10)} e seu perfil é: ${perfilImc}`);
+            if (perfilImc == 'SOBREPESO' || perfilImc == 'OBESIDADE' || perfilImc == 'OBESIDADE GRAVE') {
+                sobrepeso();
+            }
+        }*/
+
+
+            </script>
+</body>
+
+</html>
+
+
