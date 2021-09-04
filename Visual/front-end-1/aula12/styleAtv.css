@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    top: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+
+    background-color: #fff159;
+    width: 100%;
+    height: 100px;
+    padding: 20px 0 20px 80px;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.search {
+    width: 650px;
+    height: 40px;
+    top: 10px;
+    left: 250px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px 20px 10px 20px;
+    color: #33333338;
+    position: absolute;
+    
+}
+.menu {
+
+    position: absolute;
+    top: 70px;
+    left: 250px;
+     
+}
+
+.menu2 {
+
+    position: absolute;
+    top: 70px;
+    right: 150px;
+
+}
+
+.cards {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    gap: 12px;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    top: 500px;
+    position: absolute;
+
+}
+
+.card {
+    
+    width: 280px;
+    height: 350px;
+    box-shadow: 2px 1px 1px 1px #b7717131;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 20px 0 0 20px;
+     
+}
+
+.wa {
+    
+    z-index: 200;
+    
+    position: relative;
+    position: fixed;
+    top: 550px;
+    right: -1100px;
+
+     
+}
+
+.button {
+
+background-color: #d4cfcf;
+width: 100px;
+height: 40px;
+margin-top: 20px;
+border-radius: 5px;
+
+}
+
+
+.price {
+
+    font-size: 22px;
+    font-family: 'verdana', sans-serif;
+    
+}
+
+.price-off {
+
+    font-size: 14px;
+    font-family: 'verdana', sans-serif;
+    color: green;
+    padding-top: 8px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.price-sub {
+
+    font-size: 12px;
+    font-family: 'verdana', sans-serif;
+    color: green;
+    padding-bottom: 20px;
+    margin: 0;
+    padding: 0;
+  
+}
+
+.price-text {
+
+    font-size: 14px;
+    font-family: 'verdana', sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: block;
+        
+}
+
+.price-vendor {
+
+    font-size: 10px;
+    font-family: 'verdana', sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+        
+}
+
+.find {
+
+    position: absolute;
+    right: 10px;
+    top: 5px;
+
+}
+
+.chart {
+
+    position: absolute;
+    
+}
+
+
+header a {
+
+    left: 100px;
+    margin: 10px;
+    text-decoration: none;
+    color: #333333a6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+
+}
+
+.banner {
+
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+
+}
+
+body {
+
+    height: 1000px;
+
+}
+
